@@ -1,10 +1,21 @@
 body{
-  padding: 6px;
+  padding-top: 2px;
+  padding-left: 26px;
 }
 .sign-up-button{
   position: absolute;
   top: 30px;    /* Adjust the top distance */
   right: 20px;  /* Adjust the right distance */
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px; /* Adjust the space between the buttons */
+}
+
+.user-details{
+  display: flex;
+  gap: 10px; /* Adjust the space between the buttons */
 }
 
 
