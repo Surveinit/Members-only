@@ -1,11 +1,13 @@
-<h2>Members Only</h2>
+<h2>🫂 Members Only</h2>
 <% if @posts.any? %>
 
   <% if user_signed_in? %>
+  <%= link_to "New Post", new_post_path%> 
   <ol>
     <% @posts.each do |post| %>
       <li>
-        <%= current_user.email %> <br>
+        <%= post.user.email %> <br>
+        at: <%= post.created_at%> <br>
         <%= post.body%>
       </li>
     <% end %>
@@ -21,3 +23,4 @@
 <% else %>
   <p>No Posts available.</p>
 <% end %>
+
