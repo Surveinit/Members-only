@@ -19,5 +19,8 @@
 
   <body>
     <%= yield %>
+    <%# Devise flash message instruction %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
   </body>
 </html>
