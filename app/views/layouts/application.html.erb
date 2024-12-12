@@ -32,8 +32,10 @@
         </div>
       <% end %>
     </div>
+
     <%# Devise flash message instruction %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+<% flash.each do |key, message| %>
+  <p class="flash <%= key %>"><%= message %></p>
+<% end %>
   </body>
 </html>

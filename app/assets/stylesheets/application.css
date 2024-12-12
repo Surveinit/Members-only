@@ -18,4 +18,28 @@ body{
   gap: 10px; /* Adjust the space between the buttons */
 }
 
+.flash {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: inline-block;
+
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.flash.notice {
+  background-color: #dff0d8; /* Greenish background for success */
+  color: #3c763d; /* Dark green text */
+  border: 2px solid #d6e9c6; /* Lighter green border */
+}
+
+.flash.alert {
+  background-color: #f2dede; /* Red background for errors */
+  color: #a94442; /* Dark red text */
+  border: 2px solid #ebccd1; /* Lighter red border */
+}
 
