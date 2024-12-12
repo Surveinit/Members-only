@@ -1,1 +1,23 @@
 <h2>Members Only</h2>
+<% if @posts.any? %>
+
+  <% if user_signed_in? %>
+  <ol>
+    <% @posts.each do |post| %>
+      <li>
+        <%= current_user.email %> <br>
+        <%= post.body%>
+      </li>
+    <% end %>
+  </ol>
+  <% else %>
+    <% @posts.each do |post| %>
+      <li>
+        <%= post.body%>
+      </li>
+    <% end %>
+  <% end %>
+
+<% else %>
+  <p>No Posts available.</p>
+<% end %>
