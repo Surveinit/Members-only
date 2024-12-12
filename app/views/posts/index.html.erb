@@ -2,7 +2,7 @@
 <% if @posts.any? %>
 
   <% if user_signed_in? %>
-  <%= button_to "+ New Post", new_post_path%> 
+  <%= link_to "+ New Post", new_post_path, class: "new-post-button"%> 
   <ol>
     <% @posts.each do |post| %>
       <li>

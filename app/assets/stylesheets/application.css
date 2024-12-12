@@ -43,3 +43,21 @@ body{
   border: 2px solid #ebccd1; /* Lighter red border */
 }
 
+/* Style for the link to look like a button */
+.new-post-button{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-post-button:hover {
+  background-color: #0056b3;
+}
