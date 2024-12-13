@@ -2,21 +2,25 @@
 <% if @posts.any? %>
 
   <% if user_signed_in? %>
-  <%= link_to "+ New Post", new_post_path, class: "new-post-button"%> 
-  <ol>
-    <% @posts.each do |post| %>
-      <li>
-        <%= post.user.email %> <br>
-        at: <%= post.created_at%> <br>
-        <%= post.body%>
-      </li>
-    <% end %>
-  </ol>
+    <%= link_to "+ New Post", new_post_path, class: "new-post-button"%> 
+    <ol>
+      <% @posts.each do |post| %>
+        <div class="post">
+          <li>
+            <%= post.user.email %> <br>
+            at: <%= post.created_at%> <br>
+            <%= post.body%>
+          </li>
+        </div>
+      <% end %>
+    </ol>
   <% else %>
     <% @posts.each do |post| %>
-      <li>
-        <%= post.body%>
-      </li>
+      <div class="post">
+        <li>
+          <%= post.body%>
+        </li>
+      </div>
     <% end %>
   <% end %>
 

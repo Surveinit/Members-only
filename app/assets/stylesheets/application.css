@@ -59,3 +59,15 @@ body{
  background-color: #d0d0d7; /* Slightly darker gray on hover */
  border-color: #adb5bd; 
 }
+
+.post {
+  background-color: #fdfdfd;
+  height: 100px;
+  width: 300px;
+  border: 3px dashed #e9e9ed;
+  display: inline-block;
+  margin-top: 6px;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-left: 30px;
+}
